@@ -38,7 +38,7 @@ def send_the_msg(title,content):
         msg.attach(txt)
         smtp = smtplib.SMTP_SSL()
         smtp.connect('smtp.163.com', '994')
-        smtp.login('flycrane01@163.com', 'dragon001')
+        smtp.login('flycrane01@163.com', 'dRAGON001')
         smtp.sendmail('flycrane01@163.com', to_addrs='flycrane01@qq.com', msg=msg.as_string())
         smtp.quit()
     except:
